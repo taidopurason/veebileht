@@ -3,19 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PEALKIRI</title>
+    <title>BZ REACTION</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" rel="script"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <style>
+        :root {
+            --color: white;
+            --invcolor: black;}
+    </style>	
 </head>
 <body>
     <div class="container">
         <div class="title">
-            <h1>PEALKIRI</h1>
-            <p>SEE LEHT TUTVUSTAB MIDAGI</p>
-            <a class="button" id="b1" href="LEHT1/">LEHT1</a>
-            <a class="button" id="b1" href="LEHT2/">LEHT2</a>
-        </div>
+            <a id="startbtn" href="#"><h1>belousov-zhabotinsky</h1></a>
+            <p>a reaction simulation</p>
+            <a class="button" href="LEHT1/">LEHT1</a>
+            <a class="button" href="LEHT2/">LEHT2</a>
+        </div>        
     </div>
+    <canvas id="maincanvas" width="auto" height="auto"/>
+    <script src="script.js" rel="script"></script>
 </body>
 
 </html>

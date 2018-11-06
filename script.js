@@ -10,8 +10,12 @@ var context = canvas.getContext('2d');
 var width = canvas.offsetWidth;
 var height = canvas.offsetHeight;
 var pixels = context.getImageData(0, 0, width, height);
+var started = 0;
 
-$('#startbtn').click(function() {initialise(); draw()});
+$('#startbtn').click(function() {
+	if (!started){initialise(); draw(); started = 1;}
+	else{randomise();}
+	});
 
 var a,b,c,k1,k2,k3,p,q;
 p = 0; q = 1; k1 = 1.2; k2 = 1; k3 = 1;
@@ -30,12 +34,15 @@ function constrain(a,b,c){
 }
 
 function initialise(){
-    canvas.width = document.body.clientWidth; //document.width is obsolete
+    canvas.width = document.body.clientWidth;
     canvas.height = document.body.clientHeight;
     a = createArray(width,height,2);
     b = createArray(width,height,2);
     c = createArray(width,height,2);
-    for (x = 0; x < width; x++) {
+	randomise();
+}
+function randomise(){
+	for (x = 0; x < width; x++) {
         for (y = 0; y < height; y++) {
             a[x][y][p] = Math.random();
             b[x][y][p] = Math.random();
@@ -77,5 +84,5 @@ function draw(){
   if (p === 0) {p = 1; q = 0;}
   else {p = 0; q = 1;}
   context.putImageData(pixels, 0, 0);
-  setTimeout(window.requestAnimationFrame(draw), 40);
+  setTimeout(function(){window.requestAnimationFrame(draw);}, 40);
 }

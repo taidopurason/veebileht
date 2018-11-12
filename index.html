@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <title>BZ REACTION</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
     <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>	
 </head>
 <body>
     <div class="main_container">
         <div class="title">
             <a id="startbtn" href="#"><h1>belousov-zhabotinsky</h1></a>
+            <fieldset>
+                <input type="text" id="k1" class="input" placeholder="1.2" onfocus="this.placeholder = ''" onblur="this.placeholder = '1.2'">
+                <input type="text" id="k2" class="input" placeholder="1" onfocus="this.placeholder = ''" onblur="this.placeholder = '1'">
+                <input type="text" id="k3" class="input" placeholder="1" onfocus="this.placeholder = ''" onblur="this.placeholder = '1'">
+            </fieldset>
             <p>a reaction simulation</p>
             <a class="button" href="LEHT1/">LEHT1</a>
             <a class="button" href="LEHT2/">LEHT2</a>

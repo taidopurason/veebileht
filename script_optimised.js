@@ -15,10 +15,13 @@ var width_opt = constrain(width, 1, 500) //the max size of simulation calculated
 var height_opt = constrain(height, 1, 500) //
 var a,b,c,k1,k2,k3,p,q,ftime;
 p = 0; q = 1; 
-k1 = 1.2; k2 = 1; k3 = 1; //Reaction rate coefficients
 ftime = 40; //Minimum time between each frame
 
 $('#startbtn').click(function() {
+	k1 = parseFloat(document.getElementById("k1").value); //Reaction rate coefficients
+	k2 = parseFloat(document.getElementById("k2").value);
+	k3 = parseFloat(document.getElementById("k2").value);
+	if(isNaN(k1)){k1 = 1.2;}if(isNaN(k2)){k2 = 1;}if(isNaN(k3)){k3 = 1;}
 	if (!started){initialise(); draw(); started = 1;}
 	else{randomise();}
 	});

@@ -1,4 +1,5 @@
 body{
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -85,25 +86,11 @@ a {
     margin-right: auto;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-
-html {
-  font-size: 18px;
-}
-
-body {
-  font-family: "Cutive Mono", serif;
-  font-size: 1.2em;
-  line-height: 1.6;
-  background: #CCC;
-  overflow-x: hidden;
-}
-
 label .menu {
   position: absolute;
   right: -100px;
@@ -183,14 +170,4 @@ label a {
   display: block;
   color: #000;
   text-decoration: none;
-}
-
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center;
 }

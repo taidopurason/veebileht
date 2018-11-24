@@ -21,7 +21,7 @@ body{
     margin: auto;
 }
 
-h1 {
+h1, h2, h3 {
     text-transform: uppercase;
 }
 
@@ -46,12 +46,14 @@ a {
 
 #bzcanvas
 {
+    opacity: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
     position: absolute;
     top:0;
     left:0;
+    transition: 1.5s ease;
 }
 #startbtn{
     color: black;
@@ -59,7 +61,7 @@ a {
 }
 
 #startbtn:hover{
-    color: rgb(158, 85, 85);
+    color: rgba(226, 122, 122, 0.651);
     background-color: black;
     outline-color: black;
 }
@@ -156,6 +158,7 @@ label input:checked + .menu + ul {
   opacity: 1;
 }
 label ul {
+  text-align: center;
   z-index: 200;
   position: absolute;
   top: 50%;
@@ -164,10 +167,15 @@ label ul {
           transform: translate(-50%, -50%);
   opacity: 0;
   transition: .25s 0s ease-in-out;
+  list-style-type: none;
 }
+label a:hover {
+  color: rgba(226, 122, 122, 0.651);   
+  }
 label a {
   margin-bottom: 1em;
   display: block;
   color: #000;
   text-decoration: none;
+  transition: 0.3s ease;
 }

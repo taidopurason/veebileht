@@ -22,7 +22,7 @@ $('#startbtn').click(function() {
 	k2 = parseFloat(document.getElementById("k2").value);
 	k3 = parseFloat(document.getElementById("k2").value);
 	if(isNaN(k1)){k1 = 1.2;}if(isNaN(k2)){k2 = 1;}if(isNaN(k3)){k3 = 1;}
-	if (!started){initialise(); draw(); started = 1;}
+	if (!started){initialise(); draw(); started = 1; canvas.style.opacity=1;}
 	else{randomise();}
 	});
 
@@ -84,9 +84,9 @@ function draw(){
 		for (y = 0; y < height; y++) {
 		  
 		    index = (y * width + x) * 4;
-		    pixels[index] = 255 - Math.floor(a[x%width_opt][y%height_opt][q] * 100);
-		    pixels[index + 1] = 255 - Math.floor(a[x%width_opt][y%height_opt][q] * 200);
-		    pixels[index + 2] = 255 - Math.floor(a[x%width_opt][y%height_opt][q] * 200);
+		    pixels[index] = 255 - Math.floor(a[x%width_opt][y%height_opt][q] * 20);
+		    pixels[index + 1] = 255 - Math.floor(a[x%width_opt][y%height_opt][q] * 120);
+		    pixels[index + 2] = 255 - Math.floor(a[x%width_opt][y%height_opt][q] * 120);
 		    pixels[index + 3] = 255;
 		  
 		}

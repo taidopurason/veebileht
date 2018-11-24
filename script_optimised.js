@@ -40,8 +40,8 @@ function constrain(a,b,c){
 }
 
 function initialise(){
-    canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight;
+    canvas.width = document.body.parentNode.clientWidth;
+    canvas.height = document.body.parentNode.clientHeight;
     a = createArray(width_opt,height_opt,2);
     b = createArray(width_opt,height_opt,2);
     c = createArray(width_opt,height_opt,2);

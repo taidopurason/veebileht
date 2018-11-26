@@ -16,16 +16,16 @@ a {
   width: 8em;
   display: inline-block;
   margin: 5px 15px;
-  border: 1px solid black;
+  border: 1px solid #000;
   padding: 10px;
-  color: black;
+  color: #000;
   transition: 0.3s ease;
 }
 .button:hover{
   outline: 1px;
-  color: white;
-  background-color: black;
-  outline-color: black;
+  color: #FFF;
+  background-color: #000;
+  outline-color: #000;
 }
 
 .column {

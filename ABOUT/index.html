@@ -6,22 +6,23 @@
     <title>ABOUT</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="../menu.css">
+    <script src="../menu.js" rel="script"></script>
 </head>
 <body>
     <label>
-        <input type='checkbox'>
+        <input type='checkbox' id="checkbox" onclick="menu()">
         <span class='menu'>
             <span class='hamburger'></span>
         </span>
-        <ul>
-            <li>
-            <h2><a href='../'>BZ REACTION</a></h2>
-            </li>
-            <li>
-            <h2><a href='../MECHANISM/'>MECHANISM</a></h2>
-            </li> 
-        </ul>
     </label>
+    <ul id="menuitems">
+        <li>
+            <h2><a href='../'>BZ REACTION</a></h2>
+        </li>
+        <li>
+            <h2><a href='../ABOUT/'>ABOUT</a></h2>
+        </li> 
+    </ul>
     <div class="container">
         <h2>Belousov–Zhabotinsky reaction</h2>
         <h3>Reaction</h3>

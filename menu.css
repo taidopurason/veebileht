@@ -69,10 +69,7 @@ label .menu {
             transform: rotate(90deg);
     top: 0;
   }
-  label input:checked + .menu + ul {
-    opacity: 1;
-  }
-  label ul {
+  #menuitems {
     text-align: center;
     z-index: 200;
     position: absolute;
@@ -81,13 +78,13 @@ label .menu {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     opacity: 0;
-    transition: .25s 0s ease-in-out;
+    transition: .3s 0s ease-in-out;
     list-style-type: none;
   }
-  label a:hover {
+  #menuitems a:hover {
     color: rgba(226, 122, 122, 0.651);   
     }
-  label a {
+  #menuitems a {
     margin-bottom: 1em;
     display: block;
     color: #000;

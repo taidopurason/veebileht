@@ -7,7 +7,7 @@
 body{
     overflow-x: hidden;
 }
-
+//menuVeebilehel https://codepen.io/havardob/pen/zZvLgw?fbclid=IwAR38AFtxPq3bim4A3mBoHs85Y35tF87fzLwup7RO2PK0VebIBDsC4QQ0qF4
 label .menu {
     position: absolute;
     right: -100px;
@@ -21,7 +21,6 @@ label .menu {
     box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
     cursor: pointer;
   }
-//menuVeebilehel https://codepen.io/havardob/pen/zZvLgw?fbclid=IwAR38AFtxPq3bim4A3mBoHs85Y35tF87fzLwup7RO2PK0VebIBDsC4QQ0qF4
   label .hamburger {
     position: absolute;
     top: 135px;

@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+
+.container{
+  width: 80%;
+  top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+embed, iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.video{
+  width: 700px;
+  height: 400px; 
+  border: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+.headcenter{
+	text-align:center
+}
